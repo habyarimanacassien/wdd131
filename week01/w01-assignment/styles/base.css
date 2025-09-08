@@ -33,6 +33,11 @@ header {
   padding: 1rem;
 }
 
+.name-highlight {
+  color: #ffd700;
+  font-weight: 700;
+}
+
 /* Navigation Styles */
 nav {
   display: flex;
@@ -68,7 +73,7 @@ main {
   gap: 2rem;
 }
 
-/* Card alignment styles*/
+/* Card alignment styles */
 @media (min-width: 768px) {
   main {
     grid-template-columns: 2fr 1fr;
@@ -84,8 +89,8 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%; 
-  display: flex;
-  flex-direction: column;
+  display: flex; 
+  flex-direction: column; 
 }
 
 .card:hover {
@@ -133,7 +138,6 @@ main {
   color: #1e3a5f;
   margin: 1.5rem 0 1rem 0;
   font-size: 1.2rem;
-  text-align: center;
   border-bottom: 1px solid #e0e0e0;
   padding-bottom: 0.5rem;
 }
@@ -141,9 +145,9 @@ main {
 .country-content {
   display: flex;
   align-items: flex-start;
+  max-width: 80%; 
   gap: 1rem;
   margin-top: 1rem;
-  max-width: 80%;
 }
 
 .flag-container {
@@ -154,7 +158,6 @@ main {
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 
 
 .flag-caption {
@@ -215,4 +218,3 @@ footer p:last-child {
   font-size: 0.8rem;
   opacity: 0.8;
 }
-
