@@ -79,7 +79,11 @@ main {
   gap: 1rem;
 }
 
+<<<<<<< HEAD
 main h2 {
+=======
+main h1 {
+>>>>>>> df137a6079eefe476741a67a9eb6b30002305e0c
   text-align: center;
   color: #2c3e50;
   margin-top: 0rem;
