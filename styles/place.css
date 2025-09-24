@@ -1,0 +1,76 @@
+:root {
+  --primary: #006400;   /* Rwanda flag green */
+  --secondary: #ffd700; /* Rwanda flag yellow */
+  --accent: #0000cd;    /* Rwanda flag blue */
+  --text: #333;
+  --bg: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Header */
+header {
+  background: var(--accent);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Sections */
+section {
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.data, .weather {
+  background: var(--secondary);
+  border-radius: 8px;
+}
+
+.about {
+  background: #f4f4f4;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}

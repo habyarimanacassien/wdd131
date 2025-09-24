@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Country Page showcasing Rwanda with weather and cultural highlights.">
+  <meta name="author" content="Cassien Habyarimana">
+  <title>Rwanda - Land of a Thousand Hills</title>
+  <!-- Base (mobile-first) CSS -->
+  <link rel="stylesheet" href="styles/place.css">
+  <!-- Larger screen overrides -->
+  <link rel="stylesheet" href="styles/place-large.css" media="screen and (min-width: 768px)">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Rwanda</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Culture</a></li>
+        <li><a href="#">Wildlife</a></li>
+        <li><a href="#">Travel Tips</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero section -->
+    <div class="hero">
+      <picture>
+        <source srcset="images/rwanda-large.webp" media="(min-width: 1000px)">
+        <source srcset="images/rwanda-medium.webp" media="(min-width: 500px)">
+        <img src="images/rwanda-small.webp" alt="Landscape view of Rwanda hills" width="1500" height="750">
+      </picture>
+    </div>
+
+    <!-- Data section -->
+    <section class="data">
+      <h2>Data</h2>
+      <p><strong>Area:</strong> <span id="area">26,338</span> sq km</p>
+      <p><strong>Population:</strong> <span id="population">14,569,341</span></p>
+      <p><strong>Capital:</strong> <span id="capital">Kigali</span></p>
+      <p><strong>Languages:</strong> <span id="languages">Kinyarwanda, English, French</span></p>
+      <p><strong>Currency:</strong> <span id="currency">RWF</span></p>
+      <p><strong>Time Zone:</strong> <span id="timezone">UTC+2</span></p>
+      <p><strong>Calling Code:</strong> <span id="callingcode">+250</span></p>
+    </section>
+
+    <!-- Weather section -->
+    <section class="weather">
+      <h2>Weather</h2>
+      <p><strong>Temperature:</strong> <span id="temperature">18</span> °C</p>
+      <p><strong>Conditions:</strong> <span id="conditions">Partly Cloudy</span></p>
+      <p><strong>Wind Speed:</strong> <span id="windspeed">12</span> km/h</p>
+      <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+    </section>
+
+    <!-- About section -->
+    <section class="about">
+      <h2>About Rwanda</h2>
+      <p>Rwanda is known as the "Land of a Thousand Hills," with breathtaking landscapes, rich culture, and famous mountain gorillas.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Cassien Habyarimana | Rwanda</p>
+    <p>Last Modification: <span id="lastmodified"></span></p>
+  </footer>
+</body>
+</html>

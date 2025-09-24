@@ -1,0 +1,35 @@
+/* Larger screen overrides (desktop/tablet) */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.hero {
+  grid-column: 1 / -1; /* full width */
+}
+
+.data, .weather {
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+.about {
+  grid-column: 1 / -1;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Header navigation */
+nav ul {
+  justify-content: flex-end;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
