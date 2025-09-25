@@ -1,35 +1,68 @@
-/* Larger screen overrides (desktop/tablet) */
+/* Large screen styles */
+@media (min-width: 500px) {
+  .hero {
+    background-color: var(--secondary-color);
+    position: relative;
+    padding: 0.5rem;
+    margin: 0 0.3rem;
+  }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin: 1rem;
-}
+  .hero picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
 
-.hero {
-  grid-column: 1 / -1; /* full width */
-}
+  .hero img {
+    width: 100%;
+    height: 600px;
+  }
 
-.data, .weather {
-  padding: 2rem;
-  font-size: 1.1rem;
-}
+  .data, .weather {
+    width: 330px;
+    position: absolute;
+    background-color: var(--bg-color);
+    padding: 10px;
+    margin: 0;
+    border: none;
+  }
 
-.about {
-  grid-column: 1 / -1;
-  padding: 2rem;
-  font-size: 1.1rem;
-}
+  .data {
+    top: 70px;
+    left: 50px;
+  }
 
-/* Header navigation */
-nav ul {
-  justify-content: flex-end;
-}
+  .weather {
+    bottom: 65px;
+    right: 50px;
+  }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: left;
+
+  .data h2, .weather h2 {
+    width: 250px;
+    background-color: var(--primary-color);
+    color: white;
+    margin: 10px -20px 20px -20px;
+    padding: 15px 30px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    text-align: left;
+  }
+
+  .weather h2::after {
+    content: "🌤️";
+    margin-left: 1rem;
+  }
+
+  /* Ensure weather icon is hidden on large screens */
+  .icon {
+    display: none !important;
+  }
+
+  .about {
+    margin-top: 100px;
+    padding: 20px;
+    border: none;
+  }
 }

@@ -5,24 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Country Page showcasing Rwanda with weather and cultural highlights.">
   <meta name="author" content="Cassien Habyarimana">
-  <title>Rwanda - Land of a Thousand Hills</title>
-  <!-- Base (mobile-first) CSS -->
+  <title>Country Page</title>
+  <!-- Mobile CSS first -->
   <link rel="stylesheet" href="styles/place.css">
-  <!-- Larger screen overrides -->
+  <!-- Larger screen after -->
   <link rel="stylesheet" href="styles/place-large.css" media="screen and (min-width: 768px)">
   <script src="scripts/place.js" defer></script>
 </head>
+
 <body>
   <header>
     <h1>Rwanda</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Overview</a></li>
-        <li><a href="#">Culture</a></li>
-        <li><a href="#">Wildlife</a></li>
-        <li><a href="#">Travel Tips</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>
@@ -31,29 +24,49 @@
       <picture>
         <source srcset="images/rwanda-large.webp" media="(min-width: 1000px)">
         <source srcset="images/rwanda-medium.webp" media="(min-width: 500px)">
-        <img src="images/rwanda-small.webp" alt="Landscape view of Rwanda hills" width="1500" height="750">
+        <img src="images/rwanda-small.webp" alt="The beauty of Rwanda" width="500" height="250">
       </picture>
     </div>
 
     <!-- Data section -->
     <section class="data">
       <h2>Data</h2>
-      <p><strong>Area:</strong> <span id="area">26,338</span> sq km</p>
-      <p><strong>Population:</strong> <span id="population">14,569,341</span></p>
-      <p><strong>Capital:</strong> <span id="capital">Kigali</span></p>
-      <p><strong>Languages:</strong> <span id="languages">Kinyarwanda, English, French</span></p>
-      <p><strong>Currency:</strong> <span id="currency">RWF</span></p>
-      <p><strong>Time Zone:</strong> <span id="timezone">UTC+2</span></p>
-      <p><strong>Calling Code:</strong> <span id="callingcode">+250</span></p>
+      <div class="data-value-label">
+        <div class="label">Area:</div>
+        <div class="value">26,338 sq km</div>
+        <div class="label">Population:</div>
+        <div class="value">14,569,341</div>
+        <div class="label">Capital:</div>
+        <div class="value">Kigali</div>
+        <div class="label">Languages:</div>
+        <div class="value">Kinyarwanda, English, French</div>
+        <div class="label">Currency:</div>
+        <div class="value">RWF</div>
+        <div class="label">Time Zone:</div>
+        <div class="value">UTC+2</div>
+        <div class="label">Calling Code:</div>
+        <div class="value">+250</div>
+        <div class="label">Internet TLD:</div>
+        <div class="value">.rw</div>
+      </div>
     </section>
 
     <!-- Weather section -->
     <section class="weather">
       <h2>Weather</h2>
-      <p><strong>Temperature:</strong> <span id="temperature">18</span> °C</p>
-      <p><strong>Conditions:</strong> <span id="conditions">Partly Cloudy</span></p>
-      <p><strong>Wind Speed:</strong> <span id="windspeed">12</span> km/h</p>
-      <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+      <div class="icon">
+        <img src="images/weather.svg" alt="Weather Icon">
+      </div>
+      <div class="weather-value-label">
+        <div class="label">Temperature (°C):</div>
+        <div class="value" id="temperature">24</div>
+        <div class="label">Conditions:</div>
+        <div class="value">Partly Cloudy</div>
+        <div class="label">Wind Speed (km/h):</div>
+        <div class="value" id="windSpeed">12</div>
+        <div class="label">Wind Chill:</div>
+        <div class="value" id="windChill"></div>
+      </div>
     </section>
 
     <!-- About section -->
