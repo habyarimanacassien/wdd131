@@ -1,12 +1,5 @@
 /* Large screen styles */
 @media (min-width: 500px) {
-  .hero {
-    background-color: var(--secondary-color);
-    position: relative;
-    padding: 0.5rem;
-    margin: 0 0.3rem;
-  }
-
   .hero picture {
     display: flex;
     justify-content: center;
@@ -34,7 +27,7 @@
   }
 
   .weather {
-    bottom: 65px;
+    bottom: 82px;
     right: 50px;
   }
 
