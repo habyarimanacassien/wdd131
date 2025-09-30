@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A gallery of temple images with filtering capabilities">
+    <meta name="author" content="Cassien Habyarimana">
+    <title>Temple Album - Filtered</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <button id="menu-button" class="hamburger">☰</button>
+            <ul class="nav-menu">
+                <li><a id="home-link" class="active">Home</a></li>
+                <li><a id="old-link">Old</a></li>
+                <li><a id="new-link">New</a></li>
+                <li><a id="large-link">Large</a></li>
+                <li><a id="small-link">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="temple-container">
+        <h2>Temple Gallery - Home</h2>
+        <!-- Temple cards will be dynamically generated here -->
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Cassien Habyarimana | Rwanda</p>
+        <p>Last Modification: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
