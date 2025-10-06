@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d4c5d4;
+  color: #000;
+}
+
+header {
+  background-color: #4a1a4a;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+main {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+label span {
+  font-weight: normal;
+  font-style: italic;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #999;
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+legend span {
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+.rating-group {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;                            
+  margin-top: 1rem;
+}
+
+.rating-column {
+  display: flex;
+  flex-direction: column; /* Stack label above input */
+  align-items: center;    /* Center horizontally in the column */
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.checkbox-group div {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.75rem;
+}
+
+.checkbox-group label {
+  font-weight: normal;
+  margin: 0;
+}
+
+button[type="submit"] {
+  background-color: #fff;
+  color: #000;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: 2px solid #000;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #f0f0f0;
+}
+
+.confirmation {
+  background-color: #fff;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.confirmation h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4a1a4a;
+}
+
+.confirmation p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.counter {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #4a1a4a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.back-link:hover {
+  background-color: #5a2a5a;
+}
+
+footer {
+  background-color: #4a1a4a;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .rating-group {
+    gap: 1rem;
+  }
+}
